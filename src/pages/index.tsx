@@ -199,10 +199,10 @@ const Index = () => {
             className="flex justify-center mt-14 space-x-6"
           >
             {[
-              { Icon: FaGithub, url: "#" },
-              { Icon: FaLinkedin, url: "#" },
-              { Icon: FaTwitter, url: "#" },
-              { Icon: FaEnvelope, url: "#" },
+              { Icon: FaGithub, url: "https://github.com/arishkhann" },
+              //   { Icon: FaLinkedin, url: "#" },
+              { Icon: FaTwitter, url: "https://x.com/arish_khann" },
+              { Icon: FaEnvelope, url: "mailto:mohdarish9448@gmail.com" },
             ].map((item, index) => (
               <motion.a
                 key={index}
@@ -241,7 +241,7 @@ const Index = () => {
               <div className="relative">
                 <div className="absolute inset-0 bg-gradient-to-tr from-teal-400 to-purple-500 rounded-lg transform rotate-3"></div>
                 <img
-                  src="/placeholder.svg"
+                  src="/arish.jpg"
                   alt="Arish Khan"
                   className="w-full h-auto aspect-square object-cover rounded-lg relative z-10 transform -rotate-3 hover:rotate-0 transition-transform duration-300"
                 />
@@ -349,25 +349,33 @@ const Index = () => {
               </p>
 
               <div className="space-y-4">
-                <div className="flex items-center space-x-4">
+                <a
+                  href="mailto:mohdarish9448@gmail.com"
+                  target="_blank"
+                  className="flex items-center space-x-4"
+                >
                   <div className="w-12 h-12 rounded-full bg-teal-500/20 flex items-center justify-center text-teal-400">
                     <FaEnvelope className="text-xl" />
                   </div>
                   <div>
                     <h4 className="text-sm text-gray-400">Email</h4>
-                    <p className="text-white">arish.khan@example.com</p>
+                    <p className="text-white">mohdarish9448@gmail.com</p>
                   </div>
-                </div>
+                </a>
 
-                <div className="flex items-center space-x-4">
+                <a
+                  href="https://x.com/arish_khann"
+                  target="_blank"
+                  className="flex items-center space-x-4"
+                >
                   <div className="w-12 h-12 rounded-full bg-teal-500/20 flex items-center justify-center text-teal-400">
-                    <FaLinkedin className="text-xl" />
+                    <FaTwitter className="text-xl" />
                   </div>
                   <div>
                     <h4 className="text-sm text-gray-400">LinkedIn</h4>
-                    <p className="text-white">linkedin.com/in/arishkhan</p>
+                    <p className="text-white">twitter.com/arish_khann</p>
                   </div>
-                </div>
+                </a>
               </div>
             </motion.div>
 
@@ -460,9 +468,9 @@ const Index = () => {
           <p>© {new Date().getFullYear()} Arish Khan. All Rights Reserved.</p>
           <div className="flex justify-center mt-4 space-x-6">
             {[
-              { Icon: FaGithub, url: "#" },
-              { Icon: FaLinkedin, url: "#" },
-              { Icon: FaTwitter, url: "#" },
+              { Icon: FaGithub, url: "https://github.com/arishkhann" },
+              //   { Icon: FaLinkedin, url: "#" },
+              { Icon: FaTwitter, url: "https://x.com/arish_khann" },
             ].map((item, index) => (
               <motion.a
                 key={index}
